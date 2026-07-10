@@ -9,9 +9,11 @@ print("ChatBot: Hello! Type 'bye' to exit.")
 
 user_name = input("What is your name?:")
 
+print(f"ChatBot: Hello!! {user_name}")
+
 while True:
     user_input = input("You: ").lower().strip()
-
+    
     if user_input != "bye":
                     
         user_input = user_input.lower().strip()
