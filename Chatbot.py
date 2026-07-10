@@ -28,7 +28,7 @@ while True:
 
         elif user_input in {"fine", "i am fine", "good"}:
 
-            print("ChatBot: nice, How can I help you ?")
+            print("ChatBot: That's great. How can I help you ?")
 
         elif user_input in {"quote plz", "give me a quote", "quote of the day", "quote"}:
 
