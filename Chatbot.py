@@ -1,47 +1,46 @@
-def chatbot():
+import random
 
-    user_name = ""
-    user_input = ""
+quotes = ["Whatever our souls are made of, his and mine are the same. — Emily Brontë","The best thing to hold onto in life is each other. — Audrey Hepburn","I sustain myself with the love of family. — Maya Angelou","We love because it's the only true adventure. — Nikki Giovanni","To love and be loved is to feel the sun from both sides. — David Viscot"]
 
-    print("ChatBot: Hello! Type 'bye' to exit.")
+user_name = ""
+user_input = ""
 
-    user_name = input("What is your name?:")
+print("ChatBot: Hello! Type 'bye' to exit.")
 
-    print(f"ChatBot: Hello!! {user_name}")
+user_name = input("What is your name?:")
 
-    while True:
-        user_input = input("You: ").lower().strip()
+while True:
+    user_input = input("You: ").lower().strip()
 
-        if user_input != "bye":
+    if user_input != "bye":
                     
-            user_input = user_input.lower().strip()
+        user_input = user_input.lower().strip()
 
-            if user_input in {"hello", "hi", "hey", "sup"}:
+        if user_input in {"hello", "hi", "hey", "sup"}:
 
-                print(f"ChatBot: Hello!! {user_name}")
+            print(f"ChatBot: Hello!! {user_name}")
                 
-            elif user_input in {"how are you", "how's it going", "how are you doing"}:
+        elif user_input in {"how are you", "how's it going", "how are you doing"}:
 
-                print("ChatBot: I'm fine, whtat about you?")
-            elif user_input in {"fine", "i am fine", "good"}:
+            print("ChatBot: I'm fine, what about you?")
 
-                print("ChatBot: nice, How can i help you")
+        elif user_input in {"fine", "i am fine", "good"}:
 
-            elif user_input in {"bye", "goodbye", "see you", "see ya"}:
+            print("ChatBot: nice, How can I help you ?")
 
-                print("ChatBot: Goodbye!")
+        elif user_input in {"quote plz", "give me a quote", "quote of the day", "quote"}:
+
+            print(random.choice(quotes))
                 
-            elif user_input in {"thanks", "thank you", "ty"}:
+        elif user_input in {"thanks", "thank you", "ty"}:
 
-                print("ChatBot: You're welcome!")
+            print("Your welcome")
                 
-            else:
-
-                print("ChatBot: I don't understand that.")
-        
         else:
-            print("ChatBot: Good bye ")
 
-            break
+            print("ChatBot: I don't understand that.")
+        
+    else:
+        print("ChatBot: Good bye ")
 
-chatbot()
+        break
