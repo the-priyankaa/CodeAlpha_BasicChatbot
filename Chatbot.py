@@ -38,6 +38,7 @@ while True:
             print("3 Service Related")
             print("4 Complaint")
             print("5 Go Back")
+            print("Enter the option number")
             print(" ")
 
             while True:
@@ -103,6 +104,7 @@ while True:
             print("3 Contact us via Email")
             print("4 Contact us on X")
             print("5 Go Back")
+            print("Enter the option number")
             print(" ")
 
             while True:
@@ -159,6 +161,7 @@ while True:
             print("2 Visit Support")
             print("3 Chat Support")
             print("4 Go Back")
+            print("Enter the option number")
             print(" ")
 
             while True:
@@ -203,6 +206,6 @@ while True:
             print("ChatBot: I don't understand that. Please choose one of the options!")
 
     else:
-        print("ChatBot: Goodbye!")
+        print("ChatBot: Thank you for your response ")
         
         break
